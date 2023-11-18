@@ -1,0 +1,293 @@
+:root{
+    --background-cafe: #800000 ;
+    --background-whight: #ffffff ;
+    --fw6:600 ;
+    --fw7:700;
+    --fw8:800;
+    --fw:bold;
+    --font-small :1em ;
+    --font-large: 2em ;
+    --color-cafe: #6f4e37 ;
+    --color-nav: #fff ;
+    --color-hover-nav: #cccccc ;
+
+    --color-hover-menu-type: #6c5747 ;
+
+}
+@media screen and (max-width: 500px) {
+    /* style responsive header */
+   header {
+    height: 60px;
+    position: relative;
+    transition: height 1s;
+    width: 100vw;
+    flex-direction: column;
+   }
+
+
+   header img { 
+    display: block;
+    width: 30px;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    cursor: pointer;
+   }
+   .flexbox.headeronclick.headerrespon {
+    height:500px ;
+  }
+  .flexbox.headeronclick {
+    height:360px ;
+  }
+       /* style responsive left header */
+
+ header .left {
+   align-self: start;
+   margin-left: 1em;
+   width: 70%;
+   height: 40px;
+  }
+
+  .left a {
+    font-size: 5px;
+    margin-top: 2px;
+    display: inline-block;
+  }
+      /* style responsive right header */
+
+  .right ul {
+    display: block;
+background-color: transparent;
+padding-left: 50px;
+  }
+   .right  {
+
+text-align: center;
+transition: .3s;
+opacity: 0;
+display: none;
+margin: 0;
+
+   }
+
+   .right ul li  {
+    font-size: 12px;
+    background-color: transparent;
+
+   }
+   header .right ul .home a {
+    border-radius: 0;
+    color: var(--color-nav);
+    transition: .3s;
+    background-color: transparent;
+
+   }
+   header .right ul .home a:hover {
+    border: none;
+    color: var(--color-hover-nav);
+
+   }
+   header .right ul li ul {
+    position: relative;
+    display: none;
+    top: 0;
+    transform: translateX(-35px);
+    background-color: transparent;
+    margin: 0;
+    border: none;
+    transition:  .3s;
+    z-index: 1;
+   }
+ 
+   header .right ul ul li a {
+    color: var(--color-nav);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+header .right ul ul li a:hover {
+color: var(--color-hover-nav);
+}
+.right ul .link-login {
+    transform: translateX(0);
+    font-size: 1em;
+}
+    /* style responsive  container */
+
+
+.container {
+    margin-left: 2em;
+
+}
+.container .prghraf {
+    width: 100vw;
+}
+.container .prghraf img {
+    width: 15vw;
+}
+
+.container .prghraf  h1 {
+    font-size: 2.7em;
+}
+.container .prghraf p {
+    font-size: 13px;
+}
+.img-cope {
+    width: 100vw;
+display: flex;
+justify-content: center;
+}
+.img-cope .bac-img-cofe {
+    width: 45vw;
+    height: 35vh;
+
+}
+.img-cope  img {
+    width: 35vh;
+    top: 90px;
+    right: 20px;
+}
+    /* style responsive type coffee */
+
+h1.titel-cards {
+    font-size: 2em;
+}
+.card h1 {
+    font-size: 2em;
+}
+.cards {
+    row-gap: 50px;
+    height: 100%;
+    margin-bottom: 50px;
+}
+    /* style responsive about us */
+
+.about-us {
+    flex-direction: column;
+    width: 100%;
+}
+.about-us .img-about-us {
+    width: 95% ;
+    margin: auto;
+  
+}
+.about-us img {
+    height: 300px;
+}
+.about-us .about-us-pragraph {
+    width: 95% ;
+    margin: auto;
+}
+.about-us .about-us-pragraph h2 {
+    font-size: 20px;
+}
+    /* style responsive contact */
+
+.contact {
+    display: flex;
+    flex-direction: column; 
+    border-radius: 0;
+    width: 100%;
+}
+.info-one {
+    display: none;
+}
+.contact .input-data {
+    width: 100%;
+}
+.contact .info {
+width: 100%;
+padding: 10px 40px  40px 15px;
+margin-left: 0;
+border-radius: 0;
+}
+.contact .info p {
+    display: block;
+}
+.contact .input-data input {
+    width: 70%;
+}
+
+/* style responsive browser login  */
+.container-logo {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container-logo .pragraph-logo2 img , 
+.container-logo .pragraph-logo img { 
+    display: none;
+}
+.container-logo::before {
+    width: 1500px;
+    height: 1500px;
+    transform: translateX(-50%);
+    left: 51%;
+    bottom: 60%;
+    right: initial;
+    top: initial;
+    transition: 2s ease-in-out;
+}
+
+.pragraph-logo , .pragraph-logo2 {
+    width: 100%;
+    left: 0;
+}
+.pragraph-logo2  {
+    height: 500px;
+}
+.pragraph-logo p  ,
+ .pragraph-logo2 p {
+    font-size: 14px;
+ }
+ .sigin-in , .sigin-in2 {
+    width: 100%;
+    bottom: 100%;
+    left: 0;
+
+ }
+
+ .sigin-in .user-icon , 
+ .sigin-in .password-icon ,
+ .sigin-in2 .user-icon ,  
+ .sigin-in2 .password-icon ,  
+ .sigin-in2 .email-icon  {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+
+ }
+ .pragraph-logo2 {
+   
+    transform: translate( -20px,400%);
+
+
+}
+.container-logo .sigin-in  {
+    transform: translate(0, 0);
+}
+.container-logo .sigin-in2 {
+    transform: translate(0 , 1000px);
+    
+}
+.container-logo.sign-up-mode::before  {
+    transform: translate(-50% , 100%);
+    bottom: 38%;
+    right: initial;
+}
+.container-logo.sign-up-mode .pragraph-logo {
+  transform: translateY(-200%);  
+}
+.container-logo.sign-up-mode .pragraph-logo2 {
+    transform: translate(-20px,95%);
+}
+.container-logo.sign-up-mode .sigin-in {
+    transform: translateY(2000px); 
+    overflow-y: scroll;
+}
+.container-logo.sign-up-mode .sigin-in2 {
+    transform: translate( 0 , -300px);
+  
+
+}
+}
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleresponsve.css">
+</head>
+<body class="body">
+    <div class="container-logo">
+      <div class="pragraph-logo">
+        <h2>New here?</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas et voluptates maxime!</p>
+        <a href="#" class="btn-signup">SIGN UP</a>
+
+        <img src="img/Result (6).PNG" alt="">
+      </div>
+      <div class="pragraph-logo2">
+        <h2>One of us?</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas et voluptates maxime!</p>
+        <a href="#" class="btn-signin">SIGN IN</a>
+
+        <img src="img/Result (7).PNG" alt="">
+      </div>
+      <div class="sigin-in">
+      <form method="post" action="">
+        <h2>Sign in</h2>
+        <div class="input-user">
+          <span class="user-icon"><i class="ri-user-3-fill "></i></span>
+        
+        <input type="text" placeholder="Username">
+        </div>
+        <div class="input-pass">
+          <span class="password-icon"> <i class="ri-lock-fill "></i></span>
+          <input type="password" placeholder="Password">
+        </div>
+
+    
+<input type="submit" value="LOGIN" class="button">
+      </form>
+        <a href="#">Or Sign in with social platforme</a>
+        <div class="social-icon">
+            <i class="ri-facebook-fill"></i>
+            <i class="ri-twitter-fill"></i>
+            <i class="ri-google-fill"></i>
+            <i class="ri-linkedin-fill"></i>
+        </div>
+
+      </div>
+      <div class="sigin-in2">
+        <form method="post" action="">
+          <h2>Sign up</h2>
+        
+        <div class="input-email">
+          <span class="email-icon"><i class="ri-mail-fill"></i></span>
+          <input type="email" placeholder="Email">
+        </div>
+          <div class="input-user">
+            <span class="user-icon"><i class="ri-user-3-fill "></i></span>
+          
+          <input type="text" placeholder="Username">
+          </div>
+          <div class="input-pass">
+            <span class="password-icon"> <i class="ri-lock-fill "></i></span>
+            <input type="password" placeholder="Password">
+          </div>
+  <input type="submit" value="SIGN UP" class="button">
+        </form>
+          <a href="#">Or Sign up with social platformes</a>
+          <div class="social-icon">
+              <i class="ri-facebook-fill"></i>
+              <i class="ri-twitter-fill"></i>
+              <i class="ri-google-fill"></i>
+              <i class="ri-linkedin-fill"></i>
+        </div>
+
+      </div>
+    </div>
+    <script>
+      let btn_sign_up = document.querySelector('.btn-signup');
+      let btn_sign_in = document.querySelector('.btn-signin') ;
+      let container = document.querySelector('.container-logo');
+
+      btn_sign_up.addEventListener('click' , () => {
+        container.classList.add('sign-up-mode') ;
+      });
+      btn_sign_in.addEventListener('click' , () => {
+        container.classList.remove('sign-up-mode') ;
+      });
+
+
+    </script>
+</body>
+</html>
